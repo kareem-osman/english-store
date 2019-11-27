@@ -1,4 +1,19 @@
 $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() == 0){
+            $("#topup").hide()
+            $("#nav-bar ").removeClass("navfixed")
+
+        }else{$("#topup").show()
+        $("#nav-bar").addClass("navfixed")
+    }
+
+    })
+    $("#topup").click(function(){
+        $("html,body").animate(
+            {scrollTop:0},800
+        )
+    })
     $(".owl-carousel").owlCarousel({
         stagePadding: 50,
         loop:true,
