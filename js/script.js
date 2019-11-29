@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $(window).on("load",function(){
+        $(".lds-roller").fadeOut(1000)
+    })
     $(window).scroll(function(){
         if($(this).scrollTop() == 0){
             $("#topup").hide()
