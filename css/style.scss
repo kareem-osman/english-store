@@ -26,6 +26,7 @@ a{text-decoration: none;}
     font-size: 2rem;
     text-align: center;
     padding: 3px 0;
+    z-index: 999;
 }
 }
 .navfixed{
@@ -121,22 +122,26 @@ transition: .2s;
 }
 .s4{
     background-color: rgba(194, 191, 191, 0.329);
-    height: 520px;
-    margin-bottom: 20px;
+    // height: 520px;
+    margin: 20px 0;
+    padding: 0 0 20px 0;
     img{
-        width:100%;
+        // width:100%;
         height: 200px;
     }
     .card{
+      margin: 5px;
+      &:hover{
         
-        box-shadow: 1px 1px 5px black;
+        box-shadow: 2px 2px 2px black,-2px -2px 2px black;
+       
         
-    }
+    }}
 }
 .s7{
     padding-top: 30px;
     @extend.s4;
-    height: 470px;
+    // height: 470px;
 }
 .s8{
     .media{

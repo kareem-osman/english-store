@@ -48,6 +48,7 @@ a {
   font-size: 2rem;
   text-align: center;
   padding: 3px 0;
+  z-index: 999;
 }
 
 .navfixed {
@@ -171,23 +172,25 @@ a {
 
 .s4, .s7 {
   background-color: rgba(194, 191, 191, 0.329);
-  height: 520px;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  padding: 0 0 20px 0;
 }
 
 .s4 img, .s7 img {
-  width: 100%;
   height: 200px;
 }
 
 .s4 .card, .s7 .card {
-  -webkit-box-shadow: 1px 1px 5px black;
-          box-shadow: 1px 1px 5px black;
+  margin: 5px;
+}
+
+.s4 .card:hover, .s7 .card:hover {
+  -webkit-box-shadow: 2px 2px 2px black,-2px -2px 2px black;
+          box-shadow: 2px 2px 2px black,-2px -2px 2px black;
 }
 
 .s7 {
   padding-top: 30px;
-  height: 470px;
 }
 
 .s8 .media {

@@ -54,4 +54,11 @@ $(document).ready(function(){
         $(this).attr("data-target","#exampleModal")
 
     })
+
+    $(".dropdown .dropdown-item").on("click",function(){
+        let target=$(this).attr("href")
+        $("body , html").animate({
+            scrollTop:$(target).offset().top
+        },800)
+    })
      });
