@@ -2,3 +2,9 @@
 html{font-size: 10px;}
 .container{width: 100%;}
 }
+
+
+@media  screen and (max-width:768px){
+html{font-size: 12px;}
+.container{width: 95%;}
+}

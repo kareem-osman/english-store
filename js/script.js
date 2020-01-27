@@ -61,4 +61,16 @@ $(document).ready(function(){
             scrollTop:$(target).offset().top
         },800)
     })
-     });
+
+});
+// ----------------------------------------------------gallary
+// ----------------------------------------------------gallary
+// let gal_photo=Array('ddd','photo(1).jpg')
+
+let gal_cont=''
+for (let i=1 ;i<=20 ; i++)
+{
+    gal_cont += '<div> <img class="item figure-img img-fluid rounded" src="imges/gallary1/photo('+i+').jpg" alt=""> </div>'
+    document.getElementById('gallary').innerHTML=gal_cont
+    console.log(gal_cont)
+}
