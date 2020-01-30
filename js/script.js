@@ -1,13 +1,14 @@
+
 $(document).ready(function(){
     $(window).on("load",function(){
         $(".lds-roller").fadeOut(1000)
     })
     $(window).scroll(function(){
-        if($(this).scrollTop() == 0){
-            $("#topup").hide()
+        if($(this).scrollTop() < 50){
+            $("#topup").fadeOut(200)
             $("#nav-bar ").removeClass("navfixed")
 
-        }else{$("#topup").show()
+        }else{$("#topup").fadeIn(200)
         $("#nav-bar").addClass("navfixed")
     }
 
@@ -74,3 +75,5 @@ for (let i=1 ;i<=20 ; i++)
     document.getElementById('gallary').innerHTML=gal_cont
     console.log(gal_cont)
 }
+
+
